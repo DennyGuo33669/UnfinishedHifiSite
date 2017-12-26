@@ -1,5 +1,42 @@
 body{
     background-color: aliceblue;
-    text-align: center;
+    /*text-align: center;*/
     color: brown;
+    font-size: 20px;
+}
+
+li{
+    color: black;
+    display: inline;
+    font-size: 32px;
+}
+
+.nav{
+    background-color: burlywood;
+    height: 700px;
+    text-align: left;
+    line-height: 66px;
+}
+
+.nav-min li{
+    font-size: 12px;
+}
+
+.nav-item li{
+    background-color: cadetblue;
+}
+
+.tab table{
+    text-align: center;
+}
+.tab input{
+    width: 8em;
+}
+
+.main{
+    background-color: khaki;
+}
+
+.footer{
+    background-color: mediumturquoise;
 }
