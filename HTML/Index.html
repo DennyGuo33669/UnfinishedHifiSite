@@ -7,102 +7,72 @@
 </head>
 
 <body>
-
-    <div class="nav">
-        <div class="nav-min">
-            <ul>
-                <li><a href="">设为首页</a></li>
-                |
-                <li><a href="">收藏本站</a></li>
-                |
-                <li><a href="">☎18951662868</a></li>
-                |
-                <li><a href="">✉1084558196@qq.com</a></li>
-            </ul>
-        </div>
-
-        <div class="nav-item">
-            <ul>
-                <li class="nav-item home">
-                    <a href="#">首页</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="tab">
-            <table>
-                <tr>
-                    <td>用户名</td>
-                    <td><input type="text"></td>
-                    <td><label><input type="checkbox" value=""></label> 记住密码</td>
-                    <td>找回密码</td>
-                </tr>
-                <tr>
-                    <td>密码</td>
-                    <td><input type="password"></td>
-                    <td>登陆</td>
-                    <td><a href="register.html">立即注册</a></td>
-                </tr>
-            </table>
-        </div>
-
-    </div>
-
-<div class="main">
-    <h1 id="hid">Welcome</h1>
-    <button onclick="change()">点击</button>
-    <div>
-        <a href="">科普</a>
-    </div>
-
-    <div>
-        <a href="earphone.html">耳机</a>
-    </div>
-
-    <div>
-        <a href="sounds.html">音响</a>
-    </div>
-
-    <div>
-        <a href="brand.html">品牌</a>
-    </div>
-
-    <div>
-        <a href="cables.html">线材</a>
-    </div>
-
-    <div>
-        <a href="">资源</a>
-    </div>
-
-    <div>
-        <a href="">音频格式</a>
-    </div>
-
-    <img src="../images/illust_59727671_20170726_155541.jpg">
-    <img src="../images/illust_59727671_20170726_155541.jpg">
-    <img src="../images/illust_59727671_20170726_155541.jpg">
-    <img src="../images/illust_59727671_20170726_155541.jpg">
+<div id="background">
+    <img src="../images/bg.png" height="100%" width="100%">
 </div>
+    <div id="nav">
+        <ul>
+        <li><a href="Index.html">首页</a></li>
+        <li><a href="">科普</a></li>
+        <li><a href="earphone.html">耳机</a></li>
+        <li><a href="sounds.html">音响</a></li>
+        <li><a href="brand.html">品牌</a></li>
+        <li><a href="cables.html">线材</a></li>
+        <li><a href="">资源</a></li>
+        <li><a href="">音频格式</a></li>
+        </ul>
+    </div>
 
-<div class="footer">
-    <ul class="bottom">
-        <li><a href="#">关于我们</a></li>
-    </ul>
-</div>
+    <div id="main">
+        <h1 id="hid">Welcome</h1>
+        <img src="../images/illust_59727671_20170726_155541.jpg" width="50%" height="50%">
+        <img src="../images/illust_59727671_20170726_155541.jpg" width="50%" height="50%">
+        <img src="../images/illust_59727671_20170726_155541.jpg" width="50%" height="50%">
+        <img src="../images/illust_59727671_20170726_155541.jpg" width="50%" height="50%">
+        <img src="../images/illust_59727671_20170726_155541.jpg" width="50%" height="50%">
+        <img src="../images/illust_59727671_20170726_155541.jpg" width="50%" height="50%">
+        <img src="../images/illust_59727671_20170726_155541.jpg" width="50%" height="50%">
+        <img src="../images/illust_59727671_20170726_155541.jpg" width="50%" height="50%">
+        <img src="../images/illust_59727671_20170726_155541.jpg" width="50%" height="50%">
+        <img src="../images/illust_59727671_20170726_155541.jpg" width="50%" height="50%">
+        <img src="../images/illust_59727671_20170726_155541.jpg" width="50%" height="50%">
+    </div>
 
+    <div id="top">
+    <button><a href="#nav">返回</a></button>
+    </div>
+
+    <div id="ad">
+        广告位招租
+    </div>
+
+    <div id="login">
+        现在就加入我们把！
+        <button id="log-btn1">登录</button>
+        <button id="log-btn2">注册</button>
+        <button id="log-btn3">X</button>
+    </div>
+
+
+<script src="../JS/jquery-3.2.1.min.js"></script>
 <script>
-    var flag = 0;
-    function change() {
-        if(flag==0){
-            document.getElementById("hid").innerHTML="123";
-            flag++;
-        }
-        else {
-            document.getElementById("hid").innerHTML="Welcome To My Website!";
-            flag = 0;
-        }
-    }
+$(document).ready(function () {
+        $("#ad").append("<button>关闭</button>");
+        $("#ad button").css({
+            "position":"absolute",
+            "right":"0%",
+            "top":"0%",
+            "color":"red",
+            "background-color":"#fff",
+            "border":"0px"
+        }).click(function () {
+            $("#ad").slideToggle();
+        });
+
+
+
+});
+
 </script>
 </body>
 </html>
